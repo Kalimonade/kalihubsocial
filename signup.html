@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up - kalihub social</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    main {
+      background: #111;
+      padding: 40px 60px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    button {
+      width: 100%;
+      background: linear-gradient(to bottom, #333, #111);
+      border: 2px solid #555;
+      border-radius: 4px;
+      padding: 10px 0; /* less tall */
+      font-weight: bold;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 1px 1px 2px #111;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      user-select: none;
+    }
+
+    button:hover {
+      background: linear-gradient(to bottom, #555, #222);
+      border-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>Create your account</h2>
+    <button onclick="location.href='login.html'">Log in with kalihub</button>
+  </main>
+</body>
+</html>
