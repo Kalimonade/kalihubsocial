@@ -65,6 +65,25 @@
   <main>
     <h2>Create your account</h2>
     <button onclick="location.href='login.html'">Log in with kalihub</button>
+
+    <script>
+  function loginWithKalihub() {
+    const authWindow = window.open(
+      'https://kalimonade.github.io/authorize.html',
+      'Authorize with kalihub',
+      'width=500,height=600'
+    );
+
+    window.addEventListener('message', function (event) {
+      if (event.origin !== 'https://kalimonade.github.io') return; // security check
+      if (event.data.status === 'authorized') {
+        console.log('Logged in as:', event.data.user);
+        // Save or use the user data as needed
+        alert('Welcome, ' + event.data.user + '!');
+      }
+    });
+  }
+</script>
   </main>
 </body>
 </html>
